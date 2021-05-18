@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: grey;
+}
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    background-color:rgb(0, 0, 0, 0.5);
+
+}
+
+.logo{
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+    background: white;
+    color: black;
+    z-index: 999;
+}
+.home-img{
+    background-image:url(/img/portada.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+ 
+.home-div{
+    text-align: center;
+    
+
+}
+.img-tecnologias{
+    height: 96px;
+    width: 96px;
+}
+#SobreMi{
+    background: hsl(240, 56%, 98%);
+}
