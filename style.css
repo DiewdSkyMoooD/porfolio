@@ -1,11 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
+    box-sizing:border-box;
+    overflow-x: hidden;
 }
-body{
-    background: grey;
+.nav{
+    background: rgba(0, 0, 0, 0);
+}
+
+canvas{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
 }
 header nav{
     position: absolute;
@@ -16,9 +24,20 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
-    background-color:rgb(0, 0, 0, 0.5);
+    background-color:rgb(0, 0, 0, 0.0);
 
 }
+.home{
+    font-family: 'Dancing Script', cursive;
+    height: 100vh;
+    flex-direction: column;
+    width: 100vw;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    color: white;
+}
+
 
 .logo{
     color:white;
@@ -41,34 +60,15 @@ header ul li a{
     text-decoration: none;
     padding: 6px 15px;
     color: white;
-    border-radius: 20px;
 }
 header ul li a:hover,
 header ul li a.active{
-    background: white;
-    color: black;
+    color:rgb(122, 21, 139);
     z-index: 999;
 }
-.home-img{
-    background-image:url(/img/portada.jpg);
-    background-repeat: no-repeat;
-    height: 100vh;
-    font-size: cover;
+.section{
+    min-height: 100vh;
+    width: 100vw;
     display: flex;
-    align-items:center;
-    justify-content:center;
-    background-color: rgb(0, 0, 0, 0.6);
-}
- 
-.home-div{
-    text-align: center;
-    
-
-}
-.img-tecnologias{
-    height: 96px;
-    width: 96px;
-}
-#SobreMi{
-    background: hsl(240, 56%, 98%);
+    border:1px solid red;
 }
