@@ -7,57 +7,126 @@
     <title>😈Cesar CH</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
+  <header>
+        <nav class="fixed-top nav">
             <a class="logo">CCH</a>
-            <ul>
-                <li><a class="active" href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact</a></li> 
-            </ul>
+            <button class="hamburger hamburger--vortex" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>       
+              <ul class="menu">
+                <li class="menu-link" data-link="home">Home</li>
+                <li class="menu-link" data-link="about">About</li>
+                <li class="menu-link" data-link="work">Work</li>
+                <li class="menu-link" data-link="contact">Contact</li>
+            </ul>  
         </nav>
     </header>
-    <section id="Home">
-        <div class="home" >
-            <h1>Cesar Carranza Hernandez</h1>
-            <p>Web Developer.</p>
-        </div> 
-    </section>
+    <div id="app">
+    <!--   <section id="Home">
+            <div class="home text-center">
+                <h1>Cesar Carranza Hernandez</h1>
+                <p>Web Developer.</p>
+            </div>
+        </section>
+        <section id="SobreMi" class="about section">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class=" col-6 pt-5">
+                        <h1>Sobre mi</h1>
+                        <p>Apasionado por la programación inmerso en el area del desarollo web 
+                            con el afan de seguir aprendiendo y retandome cada dia
     
-
-    <section id="SobreMi" class="about section">
-        <div class="container pt-5">
-            <div class="row">
-                <div class=" col-5">
-                    <h1 class="tilulos">hola</h1>
-                    <p></p>
+                            .</p>
+                    </div>
+                    <div class="col-6 text-center">
+                        <img class="perfil img-fluid" src="./img/i.png">
+                    </div>
+                    <div class="col-12 text-center tecnologias">
+                        <p>Con experiencia</p>
+                        <img class="img-tecnologias" src="img/html.png" alt="">
+                        <img class="img-tecnologias" src="img/css.png" alt="">
+                        <img class="img-tecnologias" src="img/javascript.png" alt="">
+                        <img class="img-tecnologias" src="img/bootstrap.png" alt="">
+                        <img class="img-tecnologias" src="img/github.png" alt="">
+                        <img class="img-tecnologias" src="img/git.png" alt="">
+                        <img class="img-tecnologias" src="img/mysql.png" alt="">
+                        <p>Aprendiendo</p>
+                        <img class="img-tecnologias" src="img/react.png" alt="">
+                        <img class="img-tecnologias" src="img/nodejs.png" alt="">
+                    </div>
                 </div>
-                <div class="col-7">
-                    <img class="img-tecnologias" src="img/bootstrap.png" alt="">
-                    <img class="img-tecnologias" src="img/css.png" alt="">
-                    <img class="img-tecnologias" src="img/git.png" alt="">
-                    <img class="img-tecnologias" src="img/github.png" alt="">
-                    <img class="img-tecnologias" src="img/html.png" alt="">
-                    <img class="img-tecnologias" src="img/" alt="">
-                    <img class="img-tecnologias" src="img/react.png" alt="">
+            </div>
+        </section>
+        <section id="Trabajo" class="work section">
+            <div class="container pt-5">
+                <h1 class="text-center">Trabajos</h1>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 text-center pt-4">
+                        <div class="proyect-name img-fluid">
+                            <img class="work-img img-fluid" src="img/weather-proyect.png" alt="">
+                            <h2 data-link="weather-proyect">Clima</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center pt-4">
+                        <div class="proyect-name img-fluid">
+                            <img class="work-img img-fluid" src="img/task-proyect.png" alt="">
+                            <h2 data-link="task-proyect">Tareas</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center pt-4">
+                        <div class="proyect-name img-fluid">
+                            <img class="work-img img-fluid" src="img/githubapi-proyect.png" alt="">
+                            <h2 data-link="githubapi-proyect">Github API</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center pt-4">
+                        <div class="proyect-name img-fluid">
+                            <img class="work-img img-fluid" src="img/api-proyect.png" alt="">
+                            <h2 data-link="api-proyect">API</h2>
+                        </div> 
+                    </div>
                 </div>
-            </div> 
-        </div>
-    </section>
-    <section id="Trabajo" class="work"></section>
-
-    <section id="Contacto" class="contact section">
-        <h2>Contacto</h2>
-    </section>
+            </div>
+        </section>
     
+        <section id="Contacto" class="contact section">
+            <div class="container pt-5 text-center">
+                <h1>Contacto</h1>
+                <div class="pt-5">
+                    <a href="https://www.facebook.com/cesar.carranzahernandez.1" target="_blank"><img
+                            class="img-contacto" src="img/facebook.png" alt=""> </a>
+                    <a href="mailto:cesar5807@hotmail.com"><img class="img-contacto" src="img/mail.png" alt=""></a>
+                    <a href="https://github.com/DiewdSkyMoooD" target="_blank"><img
+                        class="img-contacto" src="img/github.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/cesar-carranza-hernandez-b14a10213/" target="_blank"><img
+                            class="img-contacto" src="img/linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </section>--> 
+        <section class="section">
+
+        </section>
+        <section class="section">
+
+        </section>
+        <section class="section">
+
+        </section>
+        <section class="section">
+
+        </section>
+    
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<script src="main.js" type="module" ></script>
+<script src="./main.js" type="module" ></script>
 </html>
