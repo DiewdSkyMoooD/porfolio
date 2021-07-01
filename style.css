@@ -88,7 +88,6 @@ canvas{
     display: flex;
     color: var(--white);
     padding-bottom: 35px;
-    border:1px solid red;
 }
 .tecnologias{
     padding-top:5%;
@@ -117,12 +116,13 @@ canvas{
     width:500px;
     display: inline-table;
 }
-.proyect-name h2{
+.proyect-name h2 a{
     bottom: 0;
     top: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
+    color: var(--white);
     background:var(--panelcolor);
     position: absolute;
     display: grid;
@@ -130,7 +130,7 @@ canvas{
     cursor: pointer;
     transition: all 0.5s ease;
 }
-.proyect-name h2:hover{
+.proyect-name h2 a:hover{
     opacity: 1;
     
 }
@@ -141,6 +141,9 @@ canvas{
     padding-top: 7%;
 }
 .work{
+    padding-top: 7%;
+}
+.not_fount{
     padding-top: 7%;
 }
 

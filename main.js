@@ -32,30 +32,7 @@ d.addEventListener('click',(e)=>{
         history.replaceState(null,'contact','/contact')
         path=window.location.pathname;
         ruter(path)
-    }
-    //work sections
-    if(e.target.matches('[data-link="weather-proyect"]')){
-        history.replaceState(null,'proyecto-clima','/work/weather-proyect')
-        path=window.location.pathname;
-        ruter(path)
-    }
-    if(e.target.matches('[data-link="task-proyect"]')){
-        history.replaceState(null,'proyecto-tareas','/work/task-proyect')
-        path=window.location.pathname;
-        ruter(path)
-    }
-    if(e.target.matches('[data-link="githubapi-proyect"]')){
-        history.replaceState(null,'proyecto-githubapi','/work/githubapi-proyect')
-        path=window.location.pathname;
-        ruter(path)
-    }
-    if(e.target.matches('[data-link="api-proyect"]')){
-        history.replaceState(null,'proyecto-api','/work/api-proyect')
-        path=window.location.pathname;
-        ruter(path)
-    }
-    
+    } 
 })
-
 
 initmodel();
