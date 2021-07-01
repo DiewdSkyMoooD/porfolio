@@ -1,5 +1,4 @@
 import * as THREE from './node_modules/three/build/three.module.js';
-import {OrbitControls} from './node_modules/three/examples/jsm/controls/OrbitControls.js'
 const scene = new THREE.Scene();
 
 export default function init(){
@@ -49,7 +48,6 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 document.body.appendChild(renderer.domElement);
-let controls= new OrbitControls(camara, renderer.domElement);
 //add planet
 const planet =new THREE.Mesh(
     new THREE.SphereGeometry(5,50,50),
@@ -62,7 +60,6 @@ const planet =new THREE.Mesh(
         vertexShader:VSPlanet,
         fragmentShader:FSPlanet
 }));
-//scene.add(planet);
 //add shine
 const shine =new THREE.Mesh(
     new THREE.SphereGeometry(5,50,50),
@@ -75,7 +72,6 @@ const shine =new THREE.Mesh(
     })
 );
 shine.scale.set(1.1,1.1,1.1)
-//scene.add(shine)
 //group
 let grupo=new THREE.Group()
 grupo.add(planet)
