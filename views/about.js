@@ -5,7 +5,7 @@ export default ()=>{
             <div class="row">
                 <div class=" col-6 pt-5">
                     <h1>Sobre mi</h1>
-                    <p>Apasionado por la programación inmerso en el área del desarollo web 
+                    <p>Apasionado por la programación inmerso en el área del desarrollo web 
                     con el afán de seguir aprendiendo y retándome cada día
     
                         .</p>
